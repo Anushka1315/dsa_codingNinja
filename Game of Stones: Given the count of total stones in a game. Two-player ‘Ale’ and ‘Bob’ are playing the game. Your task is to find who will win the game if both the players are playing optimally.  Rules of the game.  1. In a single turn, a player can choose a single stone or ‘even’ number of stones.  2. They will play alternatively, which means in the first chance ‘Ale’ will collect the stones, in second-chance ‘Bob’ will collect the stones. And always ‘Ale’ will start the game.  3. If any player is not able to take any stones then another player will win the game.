@@ -1,0 +1,13 @@
+def gameOfStones(num):
+
+    # Write your code here
+    # Return, who will win - 'Ale or Bob'?
+    # 'num' is number of stones.
+    if num == 1:
+        return "Ale"
+    elif (num % 2 == 0):
+        return "Ale"
+    elif (num % 2 != 0) and num > 3:
+        return "Ale"
+    else:
+        return "Bob"
