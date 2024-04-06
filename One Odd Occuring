@@ -1,0 +1,15 @@
+#One Odd Occurring
+#Given an array ‘ARR’ of ‘N’ integers, where all the elements occur an even number of times and only one number occurs an odd number of times.
+#Find and return the number which occurs an odd number of times.
+#For example:
+# 'N' = 5, 'ARR' = [1, 2, 3, 2, 3]
+#Output: 1
+
+#code:
+from typing import List
+
+def missingNumber(n: int, arr: List[int]) -> int:
+    xor = 0
+    for i in range(n):
+        xor = xor ^ arr[i]
+    return xor
