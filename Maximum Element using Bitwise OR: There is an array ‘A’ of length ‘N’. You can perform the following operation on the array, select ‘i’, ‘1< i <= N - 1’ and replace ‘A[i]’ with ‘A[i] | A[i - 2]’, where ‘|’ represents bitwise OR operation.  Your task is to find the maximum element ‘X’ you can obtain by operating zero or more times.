@@ -1,0 +1,17 @@
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+from typing import *
+
+
+def maximumElement(a: List[int]) -> int:
+    len1 = len(a)
+    max1 = 0
+    for i in range(len1):
+        if (i-2)>=0:
+            a[i] = a[i] | a[i-2]
+    
+    max1 = max(a)
+    return max1
